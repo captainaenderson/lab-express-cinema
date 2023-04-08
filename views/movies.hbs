@@ -7,6 +7,10 @@
 
       <h3>{{this.title}}</h3>
 
-      <a target='_blank' href='/movies/{{_id}}'>See More</a>
+      <a target='_blank' href='/movies/{{_id}}'>See Details&nbsp</a>
+      <a target='_blank' href='/movies/{{_id}}/edit'>Edit</a>
+      <form action='/movies/{{this._id}}/delete' method='POST'>
+         <input type='submit' value='Delete Movie' />
+      </form>
    </div>
 {{/each}}
